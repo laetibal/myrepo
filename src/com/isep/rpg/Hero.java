@@ -1,16 +1,29 @@
 package com.isep.rpg;
 import java.util.*;
 
-import com.isep.utils.InputParser;
+public abstract class Hero{
 
-public abstract class Hero extends Game{
-    private String armor;
-    private int lifePoints;
-    private String weaponDamage;
-    private List<Potion> potions;
-    private List<Food> lembas;
-    abstract void attack();
-    abstract void defend();
-    public static void useConsumable(Consumable consumable) {
+    //attributs des différents heros
+    public int lifePoints;
+    public String armor;
+    public int weaponDamage;
+    public List<Potion> potions;
+    public List<Food> lembas;
+
+    public Hero(int lifePoints, String armor, int weaponDamage, List<Potion> potions, List<Food> lembas){
+        this.lifePoints = lifePoints;
+        this.armor = armor;
+        this.weaponDamage = weaponDamage;
+        this.potions = potions;
+        this.lembas = lembas;
     }
+
+    abstract int attack();
+    abstract int defend();
+
+    public static void useConsumable(Consumable consumable){
+
+    }
+
 }
+

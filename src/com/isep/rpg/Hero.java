@@ -5,6 +5,7 @@ public abstract class Hero{
 
     //attributs des différents heros
     public int lifePoints;
+    public String nom;
     public String armor;
     public int weaponDamage;
     public List<Potion> potions;
@@ -12,6 +13,7 @@ public abstract class Hero{
 
     public Hero(int lifePoints, String armor, int weaponDamage, List<Potion> potions, List<Food> lembas){
         this.lifePoints = lifePoints;
+        this.nom = nom;
         this.armor = armor;
         this.weaponDamage = weaponDamage;
         this.potions = potions;

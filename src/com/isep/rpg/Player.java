@@ -4,7 +4,7 @@ import java.util.*;
 public class Player extends Hero{
 
     public Player(int lifePoints, String armor, int weaponDamage, List<Potion> potions, List<Food> lembas) {
-        super(lifePoints, armor, weaponDamage, potions, lembas);
+        super(100, armor, weaponDamage, potions, lembas);
     }
 
     @Override
